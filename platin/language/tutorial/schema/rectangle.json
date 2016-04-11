@@ -1,0 +1,13 @@
+{
+    "schema": "rectangle",
+    "inherit": "shape",
+    "items": {
+        "width": {
+        },
+        "height": {
+        },
+        "colour": {
+            "default": "red"
+        }
+    }
+}

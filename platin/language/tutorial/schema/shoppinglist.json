@@ -1,0 +1,15 @@
+{
+    "schema": "shoppinglist",
+    "items": {
+        "company": {
+        },
+        "when": {
+            "type": "formatteddatenotime"
+        },
+        "items": {
+            "unique": false,
+            "type": "str",
+            "alias": "stuff"
+        }
+    }
+}

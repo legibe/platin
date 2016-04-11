@@ -1,0 +1,11 @@
+{
+    "schema": "base",
+    "items": {
+        "Name": {
+            "required": true
+        },
+        "Description": {
+            "default": ""
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "schema": "partner",
+    "items": {
+        "surname": {
+        },
+        "firstname": {
+            "required": false
+        },
+        "age": {
+            "type": "int"
+        },
+        "gender": {
+            "default": "female",
+            "validate": ["set-choices","male","female","unspecified"]
+        },
+        "partner": {
+            "schema": "partner",
+            "required": false
+        }
+    }
+}

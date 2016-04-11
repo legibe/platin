@@ -1,0 +1,18 @@
+{
+    "schema": "clientover40",
+    "items": {
+        "surname": {
+        },
+        "firstname": {
+            "required": false
+        },
+        "age": {
+            "type": "int",
+            "validate": ["over-40"]
+        },
+        "gender": {
+            "default": "female",
+            "validate": ["set-choices","male","female","unspecified"]
+        }
+    }
+}

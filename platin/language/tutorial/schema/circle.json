@@ -1,0 +1,11 @@
+{
+    "schema": "circle",
+    "inherit": "shape",
+    "items": {
+        "radius": {
+        },
+        "opacity": {
+            "delete": true
+        }
+    }
+}

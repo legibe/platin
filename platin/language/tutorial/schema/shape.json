@@ -1,0 +1,17 @@
+{
+    "schema": "shape",
+    "items": {
+        "x": {
+        },
+        "y": {
+        },
+        "colour": {
+            "default":"black",
+            "alias": ["color","colors","colours"]
+        },
+        "opacity": {
+            "default": 100,
+            "type": "int"
+        }
+    }
+}

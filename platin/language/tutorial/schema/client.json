@@ -1,0 +1,17 @@
+{
+    "schema": "client",
+    "items": {
+        "surname": {
+        },
+        "firstname": {
+            "required": false
+        },
+        "age": {
+            "type": "int"
+        },
+        "gender": {
+            "default": "female",
+            "validate": ["set-choices","male","female","unspecified"]
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "schema": "datedproduct",
+    "items": {
+        "EffectiveStartDate": {
+            "default": "20111101",
+            "type": "pydatetime"
+        },
+        "EffectiveEndDate": {
+            "default": "20501101",
+            "type": "pydatetime"
+        }
+    }
+}

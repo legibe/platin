@@ -1,0 +1,12 @@
+{
+    "schema": "office",
+    "items": {
+        "location": {
+            "type": "str"
+        },
+        "desk": {
+            "unique": false,
+            "schema": "desk"
+        }
+    }
+}

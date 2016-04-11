@@ -1,0 +1,74 @@
+{
+    "schema": "productrateplancharge",
+    "inherit": ["base"],
+    "items": {
+        "ProductRatePlanId": {
+            "alias": "id"
+        },
+        "BillCycleType": {
+            "default": "SubscriptionStartDay",
+            "validate": ["set-choices","DefaultFromCustomer","SpecificDayofMonth","SubscriptionStartDay","ChargeTriggerDay"]
+        },
+        "BillingPeriod": {
+            "default": "Month",
+            "validate": ["set-choices","Month","Quarter","Annual","Semi-Annual","Specific","Months"]
+        },
+        "ChargeModel": {
+            "validate": ["set-choices","Discount-Fixed Amount","Discount-Percentage","Flat Fee Pricing","Per Unit Pricing","Overage Pricing","Tiered Pricing","Tiered with Overage Pricing","Volume Pricing"]
+        },
+        "ChargeType": {
+            "validate": ["set-choices","OneTime","Recurring","Usage"]
+        },
+        "IncludedUnits": {
+            "required": false,
+            "type": "int",
+            "alias": "included"
+        },
+        "MaxQuantity": {
+            "required": false,
+            "type": "int"
+        },
+        "MinQuantity": {
+            "required": false,
+            "type": "int"
+        },
+        "CreatedById": {
+            "required": false
+        },
+        "NumberOfPeriod": {
+            "required": false,
+            "type": "int"
+        },
+        "OverageCalculationOption": {
+            "default": "PerBillingPeriod",
+            "validate": ["set-choices","EndOfSmoothingPeriod","PerBillingPeriod"]
+        },
+        "OverageUnusedUnitsCreditOption": {
+            "default": "NoCredit",
+            "validate": ["set-choices","NoCredit","NoCredit","CreditBySpecificRate"]
+        },
+        "RecognizedRevenueAccount": {
+            "required": false
+        },
+        "RevenueRecognitionRuleName": {
+            "required": false
+        },
+        "RevRecTriggerCondition": {
+            "default": "ContractEffectiveDate"
+        },
+        "TriggerEvent": {
+            "default": "ContractEffective",
+            "validate": ["set-choices","ContractEffective","ServiceActivation","CustomerAcceptance"]
+
+        },
+        "UOM": {
+            "required": false
+        },
+        "ProductRatePlanChargeTierData": {
+            "required": false
+        },
+        "RevRecCode": {
+            "default": "Subscription Term"
+        }
+    }
+}

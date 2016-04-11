@@ -1,0 +1,33 @@
+{
+    "settings": {
+        "python": "python2.7",
+        "prefix": "python27-python",
+        "environment": ["scl", "enable", "python27"]
+    },
+    "packages": {
+        "setup.py": {
+            "version": "0.0.6",
+            "release": "ds1.el6",
+            "depends": [
+                "MySQL-python",
+                "Twisted",
+                "zope.interface"
+            ]
+        },
+        "MySQL-python": {
+            "version": "1.2.5",
+            "release": "ds1.el6",
+            "options": [
+                "--depends 'Percona-Server-devel-51 >= 5.1.0'"
+            ]
+        },
+        "Twisted": {
+            "version": "14.0.2",
+            "release": "ds1.el6"
+        },
+        "zope.interface": {
+            "version": "3.6.0",
+            "release": "ds1.el6"
+        }
+    }
+}

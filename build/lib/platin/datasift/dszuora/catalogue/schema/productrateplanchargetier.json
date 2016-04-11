@@ -1,0 +1,24 @@
+{
+    "schema": "productrateplanchargetier",
+    "items": {
+        "ProductRatePlanChargeId": {
+            "required": false
+        },
+        "Price": {
+            "required": false,
+            "type": "float",
+            "alias":"price"
+        },
+        "PriceFormat": {
+            "required": false,
+            "validate": ["set-choices","FlatFee","PerUnit"]
+        },
+        "Currency": {
+            "default": "USD",
+            "alias":"currency"
+        },
+        "IsOveragePrice": {
+            "default": false
+        }
+    }
+}

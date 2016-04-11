@@ -1,0 +1,14 @@
+{
+    "schema": "desk",
+    "items": {
+        "owner": {
+            "type": "str"
+        },
+        "location": {
+            "type": "int"
+        },
+        "colour": {
+            "default": "white"
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import sys
+from platin.core.date import Day, Date
+
+if len(sys.argv) > 1:
+   d = Day(sys.argv[1])
+else:
+    d = Day(Date())
+increment = None
+if len(sys.argv) > 2:
+    increment = int(sys.argv[2])
+d = Day(d)
+if increment is not None:
+    d += increment
+print d

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -eaux
+
+file=$1
+shift
+where=$(find $PYTHON_SCRIPTS -name $file)
+$PYTHON_EXEC $where $@

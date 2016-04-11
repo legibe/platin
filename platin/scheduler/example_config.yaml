@@ -1,0 +1,45 @@
+#-------------------------------------------------------------------------------------
+# this is the configuration file for the warehouse suite, all variables present here
+# need to be defined.
+#-------------------------------------------------------------------------------------
+path:
+    #---------------------------------------------------------------------------------
+    # The prefix is added to any path which doesn't start with /, it is considered
+    # relative
+    #---------------------------------------------------------------------------------
+    prefix: /home/platin/warehouse
+    #---------------------------------------------------------------------------------
+    # directory where ecflow looks for a directory structure with .ecf scripts
+    #---------------------------------------------------------------------------------
+    tasks: suite/tasks
+    #---------------------------------------------------------------------------------
+    # where to find ecflow include files
+    #---------------------------------------------------------------------------------
+    include: null
+    #---------------------------------------------------------------------------------
+    # where to find binary utilities used by jobs
+    #---------------------------------------------------------------------------------
+    bin: suite/bin
+    #---------------------------------------------------------------------------------
+    # where ecflow_start.sh was called and stores checkpoints
+    #---------------------------------------------------------------------------------
+    server: /home/platin/ecflow_server
+    #---------------------------------------------------------------------------------
+    # where each job's working directory will be created
+    #---------------------------------------------------------------------------------
+    tmpdir: /data/tmpdir
+    #---------------------------------------------------------------------------------
+    # where to store data which is supposed to stay for a while or forever.
+    #---------------------------------------------------------------------------------
+    datastore: /data/store
+
+preferences:
+    host: localhost
+    port: 9191
+    suite_name: warehouse
+    # name of the binary, could be pipi
+    python_runtime: python
+    # the number of times a job is attempted. In this case if it fails, 
+    # we don't try again. At more than once, could be tried a few times
+    # can be useful when accessing other systems over the network.
+    tries: 1

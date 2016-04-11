@@ -1,0 +1,9 @@
+{
+    "schema": "productrateplan",
+    "inherit": ["base","datedproduct"],
+    "items": {
+        "ProductId": {
+            "alias": "id"
+        }
+    }
+}

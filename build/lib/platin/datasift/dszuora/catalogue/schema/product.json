@@ -1,0 +1,9 @@
+{
+    "schema": "product",
+    "inherit": ["base","datedproduct"],
+    "items": {
+        "Category": {
+            "default": "Base Products"
+        }
+    }
+}
