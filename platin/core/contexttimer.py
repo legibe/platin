@@ -3,7 +3,7 @@ import timeit
 #--------------------------------------------------------------
 # Typical use:
 #
-# with PlatinTimer() as t:
+# with ContextTimer() as t:
 #    time.sleep(0.8)
 #    print t.snapshot()
 #    time.sleep(1.8)
@@ -13,7 +13,8 @@ import timeit
 # 2.60224699974
 #--------------------------------------------------------------
 
-class PlatinTimer(object):
+
+class ContextTimer(object):
 
     def __init__(self):
         self._elapsed = 0.0

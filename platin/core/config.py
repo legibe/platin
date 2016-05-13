@@ -4,7 +4,6 @@
 #--------------------------------------------------------------------------------
 from basic import substitute_env_variables
 
-
 class Config(object):
     cache = {}
 
@@ -25,6 +24,7 @@ class Config(object):
                 else:
                     raise IOError('Cannot handle that kind of file %s' % l[-1])
         return self.cache[path]
+
 
     """
     Expects a dictionary
